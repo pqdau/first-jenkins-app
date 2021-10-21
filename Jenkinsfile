@@ -5,7 +5,7 @@ node {
      sh "git rev-parse --short HEAD > .git/commit-id"                        
      commit_id = readFile('.git/commit-id').trim()
    }
-   stage(‘compile') {
+   stage('compile') {
        nodejs(nodeJSInstallationName: 'NodeJs') {
        sh 'npm install'
        }
