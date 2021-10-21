@@ -3,7 +3,7 @@ job('NodeJS Docker example') {
         git('git://github.com/pqdau/first-jenkins-app.git ', 'master')
     }
     wrappers {
-        nodejs('NodeJs’)
+        nodejs('NodeJs')
     }
     steps {
         shell("npm install")
