@@ -7,7 +7,7 @@ node {
    }
    stage(‘compile') {
        nodejs(nodeJSInstallationName: 'NodeJs') {
-       sh 'npm install’
+       sh 'npm install'
        }
    }
    stage('docker build/push') {
