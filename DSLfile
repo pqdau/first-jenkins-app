@@ -1,6 +1,6 @@
 job('NodeJS Docker example') {
     scm {
-        git('git://github.com/pqdau/first-jenkins-app.git ', 'master')
+        git('git://github.com/pqdau/first-jenkins-app.git', 'master')
     }
     wrappers {
         nodejs('NodeJs')
